@@ -7,7 +7,8 @@ import IconSunHigh from "@/assets/icons/IconSunHigh.svg";
 import IconMenuDeep from "@/assets/icons/IconMenuDeep.svg";
 import LinkButton from "./LinkButton.astro";
 import { SITE } from "@/config";
-
+import {Image} from "astro:assets";
+import miHoYo from "@/assets/miHoYo.jpg";
 const { pathname } = Astro.url;
 
 // Remove trailing slash from current pathname if exists
@@ -42,11 +43,11 @@ const isActive = (path: string) => {
       "flex items-baseline justify-between sm:items-center",
     ]}
   >
-    <a
-      href="/"
-      class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none"
-    >
-      {SITE.title}
+   <a
+  href="/"
+  class="absolute py-1 text-left text-2xl leading-7 font-semibold whitespace-nowrap sm:static"
+   >
+      <Image src="{miHoYo}" alt="miHoYo" class="dark:invert" />
     </a>
     <nav
       id="nav-menu"
