@@ -4,7 +4,7 @@ export const SITE = {
   profile: "",
   desc: "Get your hands dirty.",
   title: "Chengyue's Blog",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "miHoYo.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,
